@@ -32,8 +32,8 @@ module Mutant
       result.lmap do |message|
         stderr = world.stderr
         stderr.puts(message)
-        UNLICENSED.each { |line| stderr.puts(unlicensed(line)) }
-        world.kernel.sleep(SLEEP)
+        # UNLICENSED.each { |line| stderr.puts(unlicensed(line)) }
+        # world.kernel.sleep(SLEEP)
       end
 
       Either::Right.new(true)
